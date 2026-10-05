@@ -1,0 +1,26 @@
+{
+  "name": "mailsenpai",
+  "displayName": "MailSenpai",
+  "version": "1.0.0",
+  "description": "Official MailSenpai MCP server: manage email marketing lists, subscribers, segments, templates, draft campaigns and campaign stats from your AI assistant (EU-hosted, OAuth sign-in).",
+  "author": {
+    "name": "MailSenpai",
+    "url": "https://www.mailsenpai.com"
+  },
+  "homepage": "https://mcp.mailsenpai.com/docs",
+  "repository": "https://github.com/mailsenpai/mailsenpai-mcp",
+  "license": "MIT",
+  "keywords": [
+    "email-marketing",
+    "newsletter",
+    "email",
+    "marketing",
+    "mcp",
+    "eu"
+  ],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://mcp.mailsenpai.com/docs",
+  "supportUrl": "https://mcp.mailsenpai.com/support",
+  "privacyPolicyUrl": "https://www.mailsenpai.com/privacy-policy/",
+  "termsOfServiceUrl": "https://www.mailsenpai.com/tc/"
+}
