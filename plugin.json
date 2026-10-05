@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mailsenpai",
+  "version": "1.0.0",
+  "description": "Manage MailSenpai email marketing (EU-hosted) from your AI assistant: lists, subscribers, segments, templates, draft campaigns and campaign stats, with OAuth sign-in.",
+  "author": {
+    "name": "MailSenpai",
+    "url": "https://www.mailsenpai.com"
+  },
+  "keywords": ["email marketing", "newsletter", "mailing list", "email campaign", "subscribers", "mailsenpai"],
+  "homepage": "https://mcp.mailsenpai.com/docs",
+  "repository": "https://github.com/mailsenpai/mailsenpai-mcp",
+  "license": "MIT"
+}

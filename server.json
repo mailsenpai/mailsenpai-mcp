@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.mailsenpai/mcp",
+  "description": "Manage MailSenpai email marketing: lists, subscribers, templates and campaigns (EU, OAuth).",
+  "title": "MailSenpai",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.mailsenpai.com/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mailsenpai.com/mcp"
+    }
+  ]
+}
