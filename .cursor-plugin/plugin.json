@@ -1,0 +1,9 @@
+{
+  "name": "mailsenpai",
+  "description": "Official MailSenpai MCP server: manage email marketing lists, subscribers, segments, templates, draft campaigns and campaign stats from Cursor (EU-hosted, OAuth sign-in).",
+  "version": "1.0.0",
+  "author": {
+    "name": "MailSenpai",
+    "url": "https://www.mailsenpai.com"
+  }
+}
