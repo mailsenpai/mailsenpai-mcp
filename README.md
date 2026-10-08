@@ -36,11 +36,12 @@ On first use, the client opens the MailSenpai sign-in page. Sign in with your Ma
 
 ## What the tools can do
 
-The server exposes 70 tools, each annotated as read-only, write or destructive.
+The server exposes 71 tools, each annotated as read-only, write or destructive.
 
 | Area | What the assistant can do | Type |
 |---|---|---|
 | Account | See permissions, plan limits and visible lists | Read |
+| Domain DNS check | Check the SPF, DKIM, DMARC and MX records of any domain, with what to fix and the values to publish (`check_domain_dns`) | Read |
 | Lists and custom fields | List, view, create, update, copy and delete lists and fields | Read and write |
 | Segments | Create segments with conditions, update them and read their subscribers | Read and write |
 | Subscribers | Search by email across lists, add, update, confirm, unsubscribe or delete; imports within plan limits | Read and write |
@@ -55,6 +56,7 @@ Example prompts:
 - "List my lists and how many confirmed subscribers they have."
 - "Create a draft campaign for the Customers list using the Welcome template."
 - "Summarize the statistics of my last five campaigns."
+- "Check the SPF, DKIM and DMARC records of example.com and tell me what to fix."
 - "Create a segment of subscribers who joined in the last 30 days."
 
 ### Permissions and confirmations
