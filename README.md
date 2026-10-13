@@ -36,12 +36,14 @@ On first use, the client opens the MailSenpai sign-in page. Sign in with your Ma
 
 ## What the tools can do
 
-The server exposes 71 tools, each annotated as read-only, write or destructive.
+The server exposes 74 tools, each annotated as read-only, write or destructive.
 
 | Area | What the assistant can do | Type |
 |---|---|---|
 | Account | See permissions, plan limits and visible lists | Read |
 | Domain DNS check | Check the SPF, DKIM, DMARC and MX records of any domain, with what to fix and the values to publish (`check_domain_dns`) | Read |
+| Blacklist checks | Check public IPs and domains against email blocklists, with results and official removal links (`check_blacklist`) | Read |
+| Email spam tests | Start a test (`start_email_spam_test`), then read its state and score (`get_email_spam_test_result`). Starting creates a test and emails instructions; it does not send the test message for you | Read and write |
 | Lists and custom fields | List, view, create, update, copy and delete lists and fields | Read and write |
 | Segments | Create segments with conditions, update them and read their subscribers | Read and write |
 | Subscribers | Search by email across lists, add, update, confirm, unsubscribe or delete; imports within plan limits | Read and write |
@@ -173,6 +175,10 @@ Remove the connector from your AI client's settings. Issued access expires on it
 | `plugin.json` | Agent plugin manifest (Kiro powers) |
 | `gemini-extension.json` | Gemini CLI extension manifest |
 | `assets/logo.png`, `assets/logo-400.png` | Logo (512×512 and 400×400) |
+
+## Related service
+
+For transactional email, MailSenpai also offers [SMTP Senpai](https://en.mailsenpai.com/smtp-senpai/), an SMTP relay and email API. See the [API documentation](https://en.mailsenpai.com/smtp-api/) and [integration guides](https://en.mailsenpai.com/integrations/).
 
 ## Also listed on
 
