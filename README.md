@@ -169,12 +169,19 @@ Remove the connector from your AI client's settings. Issued access expires on it
 | File | Purpose |
 |---|---|
 | `server.json` | Entry of the official MCP Registry (`com.mailsenpai/mcp`) |
-| `.mcp.json`, `mcp.json` | Generic MCP client configuration (remote HTTP server) |
+| `.mcp.json` | Remote HTTP configuration for compatible MCP clients |
+| `mcp.json` | Agent Plugins 1.0.0 configuration, using the `streamable-http` transport |
 | `.claude-plugin/plugin.json` | Claude Code plugin manifest |
 | `.cursor-plugin/plugin.json` | Cursor plugin manifest |
-| `plugin.json` | Agent plugin manifest (Kiro powers) |
+| `plugin.json` | Agent Plugins manifest for catalog discovery and compatible clients |
 | `gemini-extension.json` | Gemini CLI extension manifest |
 | `assets/logo.png`, `assets/logo-400.png` | Logo (512×512 and 400×400) |
+
+## Agent Plugins Directory
+
+The hosted connector is indexed in the [Agent Plugins Directory](https://agent-plugins.directory/mailsenpai/mailsenpai). The directory reads the public `plugin.json` and `mcp.json` manifests. It can discover the hosted server without access to its source code. Follow the OAuth setup above after installation.
+
+Guides: [English](https://en.mailsenpai.com/email-marketing-mcp-server/) · [Italian](https://www.mailsenpai.com/server-mcp-email-marketing/).
 
 ## Related service
 
